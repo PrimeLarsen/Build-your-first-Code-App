@@ -42,6 +42,8 @@ Then extend it: click **Done** and assert the grid now shows only done tasks (on
 
 ## 5. Write test #3 — the golden path
 
+The *golden path* (also "happy path") is the main scenario where nothing goes wrong: 
+
 New task → dialog opens → fill Title → Create → dialog closes → new task appears in the grid.
 
 Rules from `docs/playwright-guide.md`:

@@ -11,6 +11,7 @@ A Code App is a full React + TypeScript app (built with Vite) that runs natively
 | Skill | Where |
 |---|---|
 | Find your way around **VS Code** (no experience needed) | [VS Code basics](docs/vscode-basics.md) |
+| Look up any technical word in plain language | [Glossary](docs/glossary.md) |
 | Clone a golden repo from **Azure DevOps** | [Lab 0](docs/labs/lab-0-setup.md) |
 | Read a **design spec** and **team rules** before coding | [Design](docs/design.md) · [Rules](docs/rules.md) |
 | Build app screens with **GitHub Copilot** | [Lab 2](docs/labs/lab-2-build-ui.md) |
@@ -25,6 +26,8 @@ A Code App is a full React + TypeScript app (built with Vite) that runs natively
 │   ├── design.md                  # 📐 The app design you will build (single source of truth)
 │   ├── rules.md                   # 📏 Team coding rules Copilot must follow
 │   ├── vscode-basics.md           # 🧑‍💻 VS Code survival guide (start here if new to VS Code)
+│   ├── glossary.md                # 📖 Every technical term in plain language
+│   ├── images/                    # 🖼️ Diagrams used by the docs
 │   ├── copilot-guide.md           # 🤖 How to prompt Copilot effectively
 │   ├── playwright-guide.md        # 🧪 UI testing concepts
 │   └── labs/                      # 🧪 Step-by-step labs (start at lab-0)

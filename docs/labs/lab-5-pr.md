@@ -20,7 +20,7 @@ On GitHub (or the Azure DevOps pull-request page, if that's where your team work
 
 ## 3. Watch CI
 
-The workflow in `.github/workflows/ci.yml` runs on every PR:
+*CI (continuous integration)* is the robot that builds the app and runs every test automatically on each PR — you never test by hand what CI can test for you. The workflow in `.github/workflows/ci.yml` runs on every PR:
 
 1. `npm ci` — clean install
 2. `npm run build` — TypeScript strict + Vite build must pass
@@ -38,7 +38,7 @@ Swap PRs with a teammate and review against `docs/rules.md`. A good first review
 
 - CI green ✅
 - At least one approval ✅
-- Squash-merge into `main`, delete the branch
+- Squash-merge into `main` (all your commits become one single commit — tidy history), delete the branch
 
 ## Wrap-up discussion
 

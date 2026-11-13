@@ -14,7 +14,9 @@ git checkout -b lab/2-task-list
 
 > 🧑‍💻 Not sure where Copilot Chat lives? Open it with `Ctrl+Shift+I` — see [VS Code basics §4](../vscode-basics.md).
 
-Open Copilot Chat in VS Code and try this prompt (adapt freely — this is a starting point):
+Open Copilot Chat in VS Code and try this prompt (adapt freely — this is a starting point). For better results, use the techniques from [docs/copilot-guide.md](../copilot-guide.md) §5 — especially **§5A**: attach files with `#` so Copilot uses your real types.
+
+> 📖 New words? *Props* are the inputs a component receives from its parent (like function parameters), a *component* is one reusable piece of the screen, and *strict* TypeScript means the editor refuses anything suspicious. All in the [glossary](../glossary.md).
 
 ```
 Following docs/design.md §2.1 and docs/rules.md, build the Task List screen in

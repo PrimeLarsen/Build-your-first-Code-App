@@ -1,33 +1,31 @@
 # 🧑‍💻 VS Code basics (zero experience needed)
 
-New to VS Code? This page teaches you the four things you need for the whole session. Everything can be done with clicks — the terminal is optional.
+New to VS Code? This page teaches you the four things you need for the whole session. Everything can be done with clicks — the terminal is optional. Any technical word used anywhere in the repo is defined in [docs/glossary.md](glossary.md).
 
-## 1. The five areas of the window
+## 1. Find your way around the window
 
-```
-┌──┬─────────────────────┬──────────────────────────┐
-│  │ EXPLORER            │                          │
-│ A│ (files on the       │      EDITOR               │
-│ C│  left)              │    (your open file)       │
-│ T│                     │                          │
-│ I│ SOURCE CONTROL      │                          │
-│ V│ (git, see §3)       │                          │
-│ I│                     │                          │
-│ T│ COPILOT CHAT       │                          │
-│ Y│ (see §4)            │                          │
-│ B│                     │                          │
-│ A│ PROBLEMS (errors)   │                          │
-│ R│ TERMINAL            │                          │
-└──┴─────────────────────┴──────────────────────────┘
-```
+![The VS Code window with the six areas you need, numbered](images/vscode-layout.svg)
 
-- **Activity Bar** (left edge): switch between Explorer, Source Control, Copilot Chat, Search.
-- **Explorer** (= Ctrl+Shift+E): the file tree — `docs/`, `src/`, `e2e/`.
-- **Editor**: where files open. Ctrl+P → type a file name → Enter to jump anywhere.
-- **Problems** tab (bottom, Ctrl+Shift+M): TypeScript errors appear here *before* you even save — check it often.
-- **Terminal** (Ctrl+`): only needed for `npm` commands; copy-paste from the labs.
+| # | Area | What it is — and what you use it for |
+|---|---|---|
+| 1 | **Activity Bar** (left edge) | Switch between Explorer, Search, Source Control and Copilot Chat — one click each |
+| 2 | **Side Bar** | Shows whatever you picked in the Activity Bar: the file tree (`docs/`, `src/`, `e2e/`), git changes, or Copilot Chat |
+| 3 | **Editor** | Where files open as tabs. `Ctrl+P` → type a file name → Enter jumps anywhere in the repo |
+| 4 | **Problems tab** (bottom panel, `Ctrl+Shift+M`) | TypeScript errors appear here *before* you even save — check it often |
+| 5 | **Terminal** (`Ctrl+\``) | Only needed for `npm` commands; copy-paste from the labs |
+| 6 | **Status Bar** (bottom edge) | Your branch name (click it to switch/create), error counts, and the sync button |
 
 ## 2. Open the repo — you never need a terminal
+
+**Easiest way — the "Clone in VS Code" button in Azure DevOps** (used in Lab 0):
+
+1. In Azure DevOps → **Repos** → **Files**, click **Clone**.
+2. Click **Clone in VS Code**.
+3. Your browser asks permission to open VS Code → **Allow/Open**.
+4. VS Code asks you to **select a local folder** where the repo will be cloned → pick one.
+5. When asked **"Would you like to open the cloned repository?"** → **Open**.
+
+**Alternative — the Command Palette** (works with any Git URL):
 
 1. Open VS Code.
 2. Press `Ctrl+Shift+P` (⌘⇧P on Mac) to open the **Command Palette** — a search box for everything VS Code can do.
@@ -75,4 +73,4 @@ Tip: install the **Playwright Test for VS Code** extension — it gives you a gr
 | Red squiggles in code | Check the Problems tab; hover the squiggle; ask Copilot Chat `/fix` |
 | `npm: command not found` | Install Node.js (Lab 0), then reopen VS Code |
 | App shows "connection refused" | `npm run dev` still running? Check the terminal for errors |
-| Copilot does something odd | Reject (Esc), re-read `docs/copilot-guide.md` §5, re-prompt with context |
+| Copilot does something odd | Reject (Esc), re-read `docs/copilot-guide.md` §6, re-prompt with context |
