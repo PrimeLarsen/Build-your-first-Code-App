@@ -13,20 +13,21 @@
 
 ## 2. Clone from Azure DevOps
 
-In the session we host this golden repo in the team's Azure DevOps project. Cloning is identical to GitHub — you just auth against your work account.
+In the session we host this golden repo in the team's Azure DevOps project. We clone it with the **Clone in VS Code** button — no terminal, no copy-pasting URLs.
 
-> 🧑‍💻 **New to VS Code or git?** Do this with clicks, no terminal — see [docs/vscode-basics.md](../vscode-basics.md) §2.
+> 🧑‍💻 **New to VS Code or git?** This flow is all clicks — see [docs/vscode-basics.md](../vscode-basics.md) §2 if anything looks unfamiliar.
 
 1. In Azure DevOps, open the project → **Repos** → **Files**.
-2. Click **Clone** (top right). Copy the HTTPS URL, e.g.
-   `https://dev.azure.com/<org>/<project>/_git/golden-code-app`
-3. **Option A — VS Code (recommended):** press `Ctrl+Shift+P` → type `Git: Clone` → paste the URL → pick a folder → **Open** when asked.
-4. **Option B — terminal:**
+2. Click **Clone** (top right). The clone dialog shows the HTTPS URL and — below it — buttons for **"Clone in VS Code"** (and IDE options).
+3. Click **Clone in VS Code**:
+   - The browser asks permission to open VS Code ("Open Visual Studio Code?" / "Open the azuredevops… site?" or "Allow") → click **Allow/Open**.
+   - VS Code opens (or switches) and shows a folder picker: **"Select repository location"** → choose a local folder, e.g. `C:\Dev\` (or `~/dev/`).
+   - VS Code clones the repo into that folder and shows progress in the bottom-right corner.
+4. When asked **"Would you like to open the cloned repository?"** → click **Open**.
 
-```bash
-git clone https://dev.azure.com/<org>/<project>/_git/golden-code-app
-cd golden-code-app
-```
+That's it — the repo is open in VS Code and git is already connected.
+
+> **Button missing?** The clone dialog's IDE buttons appear when Azure DevOps detects VS Code; if you don't see it, choose **Clone in VS Code** under "Other options", or fall back to pressing `Ctrl+Shift+P` in VS Code → `Git: Clone` → paste the HTTPS URL from the dialog.
 
 > If the clone asks for credentials: use **Git Credential Manager** (bundled with Git for Windows) or a **Personal Access Token** (Azure DevOps → User settings → Personal access tokens → scope **Code: Read**). Never store the PAT in a file inside the repo.
 

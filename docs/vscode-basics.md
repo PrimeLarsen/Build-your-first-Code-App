@@ -29,6 +29,16 @@ New to VS Code? This page teaches you the four things you need for the whole ses
 
 ## 2. Open the repo — you never need a terminal
 
+**Easiest way — the "Clone in VS Code" button in Azure DevOps** (used in Lab 0):
+
+1. In Azure DevOps → **Repos** → **Files**, click **Clone**.
+2. Click **Clone in VS Code**.
+3. Your browser asks permission to open VS Code → **Allow/Open**.
+4. VS Code asks you to **select a local folder** where the repo will be cloned → pick one.
+5. When asked **"Would you like to open the cloned repository?"** → **Open**.
+
+**Alternative — the Command Palette** (works with any Git URL):
+
 1. Open VS Code.
 2. Press `Ctrl+Shift+P` (⌘⇧P on Mac) to open the **Command Palette** — a search box for everything VS Code can do.
 3. Type `Git: Clone`, press Enter, paste the repo URL from the labs.
