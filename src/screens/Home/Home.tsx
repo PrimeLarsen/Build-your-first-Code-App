@@ -74,7 +74,7 @@ export function Home({ taskService }: HomeProps) {
 
   return (
     <main className={styles.root}>
-      <Title1>My tasks</Title1>
+      <Title1 as="h1">My tasks</Title1>
       <Subtitle2>
         Placeholder screen — you will replace it with the Task List from
         docs/design.md §2.1 in Lab 2.
@@ -98,8 +98,8 @@ export function Home({ taskService }: HomeProps) {
             </DataGridRow>
           </DataGridHeader>
           <DataGridBody<Task>>
-            {(item) => (
-              <DataGridRow>
+            {({ item, rowId }) => (
+              <DataGridRow key={rowId}>
                 {(column) => column.renderCell(item)}
               </DataGridRow>
             )}
