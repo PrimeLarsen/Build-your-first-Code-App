@@ -75,4 +75,4 @@ Tip: install the **Playwright Test for VS Code** extension — it gives you a gr
 | Red squiggles in code | Check the Problems tab; hover the squiggle; ask Copilot Chat `/fix` |
 | `npm: command not found` | Install Node.js (Lab 0), then reopen VS Code |
 | App shows "connection refused" | `npm run dev` still running? Check the terminal for errors |
-| Copilot does something odd | Reject (Esc), re-read `docs/copilot-guide.md` §5, re-prompt with context |
+| Copilot does something odd | Reject (Esc), re-read `docs/copilot-guide.md` §6, re-prompt with context |

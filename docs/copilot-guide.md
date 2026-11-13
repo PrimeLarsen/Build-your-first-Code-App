@@ -32,7 +32,84 @@ A good prompt has three parts: **context** (which file/section), **task** (what 
 4. Run the app and the Playwright tests.
 5. Commit in small steps (`feat: add task list data grid`).
 
-## 5. When Copilot goes wrong
+## 5. The prompt cookbook — techniques that get results
+
+These are the patterns that consistently turn mediocre suggestions into shippable code. Try them in order during the labs.
+
+### A. Anchor the context with `#file`
+
+In Copilot Chat, typing `#` gives a file picker. Attach the exact files instead of hoping Copilot finds them:
+
+```
+Using #design.md §2.1, #TaskService.ts and #Task.ts, build #TaskList.tsx
+```
+
+Copilot then writes code against your *real* types and imports — not ones it imagines.
+
+### B. Ask for a plan first, then code
+
+For anything bigger than a button, split the conversation:
+
+```
+Before writing code: give me a plan in 5 numbered steps for implementing
+docs/design.md §2.1, with the files you would create. Ask me anything unclear first.
+```
+
+You correct the plan in chat (cheap), then say "go" — instead of correcting 200 lines of code (expensive).
+
+### C. Show one example, get consistency
+
+If you want a specific shape of code, paste a small example of what "good" looks like:
+
+```
+Write hooks in the same style as this example: [paste 10 lines]
+Now write a useTaskFilter hook that filters by status + search text.
+```
+
+### D. One thing per prompt
+
+"Build the screen, add the dialog, write tests and update the README" produces four mediocre things. Four prompts produce four good things. Small steps also give you small diffs — and small diffs get reviewed properly.
+
+### E. Give it the test as the goal
+
+The fastest way to correct behavior is to state the assertion you want:
+
+```
+Make this Playwright test pass without changing it:
+await expect(page.getByRole('tab', { name: 'Open' })).toContainText('2');
+```
+
+A clear, checkable goal beats a paragraph of prose.
+
+### F. Iterate — don't restart
+
+When the first suggestion is 80% right, keep the thread and refine:
+
+- "Good, but extract the filtering into a hook (rule 6)."
+- "Now add the loading spinner from design §4."
+- "Make the diff smaller — only touch TaskList.tsx."
+
+Copilot keeps the conversation as context; a new chat throws it away.
+
+### G. Use it as a reviewer, not just a writer
+
+Before you push:
+
+```
+Review src/screens/TaskList/ against docs/rules.md and docs/design.md §2.1.
+List every rule violation as a numbered list. Do not rewrite the code yet.
+```
+
+### H. When you're stuck, ask for options
+
+```
+What are three ways to implement the tab filter counts in this repo?
+Which one fits docs/rules.md best, and why?
+```
+
+Juniors who ask "why" learn the reasoning; juniors who only ask "write it" learn nothing.
+
+## 6. When Copilot goes wrong
 
 - It invents libraries (e.g. MUI instead of Fluent UI) → reject, re-prompt with "Fluent UI v9 only, see docs/rules.md".
 - It writes `any` or disables types → reject; rule 1 is non-negotiable.
