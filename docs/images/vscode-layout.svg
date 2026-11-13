@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 680" font-family="Segoe UI, Arial, sans-serif">
+  <!-- background -->
+  <rect x="0" y="0" width="980" height="640" fill="#f5f5f5"/>
+
+  <!-- window shadow + frame -->
+  <rect x="40" y="30" width="900" height="560" rx="8" fill="#252526"/>
+  <!-- title bar -->
+  <rect x="40" y="30" width="900" height="34" rx="8" fill="#3c3c3c"/>
+  <rect x="40" y="48" width="900" height="16" fill="#3c3c3c"/>
+  <circle cx="66" cy="47" r="6" fill="#ff5f57"/>
+  <circle cx="86" cy="47" r="6" fill="#febc2e"/>
+  <circle cx="106" cy="47" r="6" fill="#28c840"/>
+  <text x="490" y="52" fill="#cccccc" font-size="13" text-anchor="middle">golden-code-app — Visual Studio Code</text>
+
+  <!-- 1. Activity Bar -->
+  <rect x="40" y="64" width="48" height="490" fill="#333333"/>
+  <g fill="#858585">
+    <rect x="56" y="88" width="16" height="16" rx="2"/>
+    <text x="64" y="150" font-size="16" text-anchor="middle">&#x2315;</text>
+    <rect x="57" y="170" width="14" height="16" rx="2"/>
+    <rect x="56" y="220" width="16" height="16" rx="2"/>
+    <circle cx="64" cy="270" r="8"/>
+    <rect x="57" y="300" width="14" height="16" rx="2"/>
+  </g>
+  <rect x="40" y="84" width="3" height="30" fill="#ffffff"/>
+
+  <!-- 2. Side Bar -->
+  <rect x="88" y="64" width="220" height="490" fill="#252526"/>
+  <text x="102" y="90" fill="#bbbbbb" font-size="12" font-weight="bold">EXPLORER</text>
+  <text x="102" y="112" fill="#cccccc" font-size="12">&#x25B8; GOLDEN-CODE-APP</text>
+  <g fill="#cccccc" font-size="12">
+    <text x="114" y="132">&#x25B8; .github</text>
+    <text x="114" y="150">&#x25B8; docs</text>
+    <text x="114" y="168">&#x25B8; src</text>
+    <text x="126" y="186">App.tsx</text>
+    <text x="126" y="204">main.tsx</text>
+    <text x="114" y="222">&#x25B8; e2e</text>
+    <text x="114" y="240">&#x25B8; package.json</text>
+  </g>
+  <line x1="88" y1="470" x2="308" y2="470" stroke="#3c3c3c" stroke-width="1"/>
+  <text x="102" y="492" fill="#bbbbbb" font-size="11" font-weight="bold">SOURCE CONTROL</text>
+  <text x="102" y="512" fill="#cccccc" font-size="11">&#x2713; feat: task list screen</text>
+  <text x="102" y="532" fill="#cccccc" font-size="11">3 changes &#x25B8;</text>
+
+  <!-- 3. Editor -->
+  <rect x="308" y="64" width="632" height="490" fill="#1e1e1e"/>
+  <rect x="308" y="64" width="632" height="36" fill="#252526"/>
+  <g font-size="12">
+    <rect x="316" y="70" width="120" height="24" rx="4" fill="#2d2d2d"/>
+    <text x="376" y="86" fill="#ffffff" text-anchor="middle">TaskList.tsx</text>
+    <rect x="440" y="70" width="110" height="24" rx="4" fill="#252526"/>
+    <text x="495" y="86" fill="#9d9d9d" text-anchor="middle">design.md</text>
+    <rect x="554" y="70" width="90" height="24" rx="4" fill="#252526"/>
+    <text x="599" y="86" fill="#9d9d9d" text-anchor="middle">App.tsx</text>
+  </g>
+  <g font-family="Consolas, Menlo, monospace" font-size="12">
+    <text x="324" y="130" fill="#6a9955">// Fluent UI v9 only — see docs/rules.md</text>
+    <text x="324" y="152" fill="#c586c0">export function</text>
+    <text x="433" y="152" fill="#4ec9b0">TaskList</text>
+    <text x="492" y="152" fill="#d4d4d4">() {</text>
+    <text x="344" y="174" fill="#d4d4d4">&#x21B5;</text>
+  </g>
+  <rect x="308" y="470" width="632" height="84" fill="#1e1e1e"/>
+  <line x1="308" y1="470" x2="940" y2="470" stroke="#3c3c3c" stroke-width="1"/>
+  <g font-size="11">
+    <text x="324" y="488" fill="#4fc1ff">PROBLEMS</text>
+    <text x="400" y="488" fill="#9d9d9d">OUTPUT</text>
+    <text x="468" y="488" fill="#9d9d9d">DEBUG CONSOLE</text>
+    <text x="578" y="488" fill="#9d9d9d">TERMINAL</text>
+    <text x="324" y="512" fill="#cccccc" font-family="Consolas, Menlo, monospace">$ npm run dev</text>
+    <text x="324" y="530" fill="#cccccc" font-family="Consolas, Menlo, monospace">Local: http://localhost:3000/</text>
+  </g>
+
+  <!-- status bar -->
+  <rect x="40" y="554" width="900" height="36" fill="#007acc"/>
+  <g fill="#ffffff" font-size="12">
+    <text x="56" y="576">main*</text>
+    <text x="102" y="576">&#x2713; 0 &#x26A0; 0</text>
+    <text x="170" y="576">golden-code-app</text>
+    <text x="880" y="576">&#x21C4; 3&#x2193; 1</text>
+  </g>
+
+  <!-- callout badges -->
+  <g>
+    <circle cx="22" cy="180" r="14" fill="#0078d4"/>
+    <text x="22" y="185" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">1</text>
+    <circle cx="22" cy="320" r="14" fill="#0078d4"/>
+    <text x="22" y="325" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">2</text>
+    <circle cx="298" cy="82" r="14" fill="#0078d4"/>
+    <text x="298" y="87" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">3</text>
+    <circle cx="958" cy="483" r="14" fill="#0078d4"/>
+    <text x="958" y="488" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">4</text>
+    <circle cx="958" cy="540" r="14" fill="#0078d4"/>
+    <text x="958" y="545" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">5</text>
+    <circle cx="22" cy="572" r="14" fill="#0078d4"/>
+    <text x="22" y="577" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">6</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="13" fill="#333333">
+    <text x="50" y="620"><tspan fill="#0078d4" font-weight="bold">1</tspan> Activity Bar — Explorer, Search, Source Control, Copilot Chat</text>
+    <text x="50" y="640"><tspan fill="#0078d4" font-weight="bold">2</tspan> Side Bar — file tree, git changes, Copilot Chat</text>
+    <text x="50" y="660"><tspan fill="#0078d4" font-weight="bold">3</tspan> Editor — open files as tabs (Ctrl+P to jump)</text>
+    <text x="530" y="620"><tspan fill="#0078d4" font-weight="bold">4</tspan> Problems — TypeScript errors appear here</text>
+    <text x="530" y="640"><tspan fill="#0078d4" font-weight="bold">5</tspan> Panel — Terminal (Ctrl+`), npm commands</text>
+    <text x="530" y="660"><tspan fill="#0078d4" font-weight="bold">6</tspan> Status Bar — branch, errors, sync</text>
+  </g>
+</svg>
