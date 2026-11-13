@@ -43,7 +43,7 @@ npx playwright show-report   # open the HTML report after a run
 
 ## How tests run without Power Platform
 
-Real Code Apps need a Power Platform login — a UI test can't sign in. So the scaffold boots in **mock mode** (`VITE_USE_MOCKS=true`, the default in dev and CI): `src/services/mockTaskService.ts` serves fake data. The tests then exercise the *real* React UI against the same `TaskService` interface. In Lab 3 you'll learn how this same seam lets you swap in Dataverse later without touching a single test.
+Real Code Apps need a Power Platform login — a UI test can't sign in. So the scaffold boots in **mock mode** (`VITE_USE_MOCKS=true`, the default in dev and CI): `src/services/mockTaskService.ts` serves fake data. The tests then exercise the *real* React UI against the same `TaskService` interface. In Lab 3 you'll learn how this same seam lets you swap in Dataverse later without touching a single test. (Unfamiliar terms — *mock mode*, *seam*, *headless*? See [docs/glossary.md](glossary.md).)
 
 ## Where the files live
 

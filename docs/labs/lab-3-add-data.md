@@ -4,6 +4,8 @@
 
 ## 1. Recap the seam
 
+> 📖 The **seam** is the single place where the data source plugs in: screens only know the `TaskService` *interface* (a contract listing which methods exist), so the implementation behind it can be swapped freely. Plain-language definitions of *environment*, *tenant*, *connection ID* and friends: [docs/glossary.md](../glossary.md).
+
 Your screen depends on `TaskService` (interface), not on mock data. Today `src/services/index.ts` returns the mock implementation:
 
 ```ts

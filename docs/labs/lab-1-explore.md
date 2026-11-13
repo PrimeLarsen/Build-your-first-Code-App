@@ -9,6 +9,8 @@
 
 ## 2. Tour the scaffold
 
+> 📖 The *scaffold* is the starter code the repo ships with — a working app skeleton you build on. Any other unfamiliar word? Check [docs/glossary.md](../glossary.md).
+
 | Path | Purpose |
 |---|---|
 | `src/App.tsx` | App shell: Fluent provider + navigation |
@@ -26,7 +28,7 @@ Open `src/App.tsx` and follow how the shell loads tasks through `TaskService` (m
 1. Which file decides that mock data is used?
 2. Which file would change if we swapped in Dataverse — and *only* that file?
 
-That seam is why rule 7 exists.
+That **seam** — the single place where the data source is plugged in, so it can be swapped without touching the screens — is why rule 7 exists. (Full definition: [glossary](../glossary.md#data--the-seam).)
 
 ## 4. Ask Copilot to explain, not to code
 

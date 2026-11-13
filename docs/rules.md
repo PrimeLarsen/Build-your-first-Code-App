@@ -2,6 +2,8 @@
 
 These rules apply to **every** Code App built from this golden repo — humans *and* Copilot. They are wired into Copilot automatically via `.github/copilot-instructions.md`; you still need to enforce them in review.
 
+> 📖 Any term below you can't explain in your own words? Look it up in [docs/glossary.md](glossary.md) — rule 16 applies to humans too.
+
 ## Stack — no substitutions without team-lead approval
 
 | Concern | Choice |

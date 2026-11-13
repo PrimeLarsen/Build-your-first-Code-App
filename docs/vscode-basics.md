@@ -1,6 +1,6 @@
 # 🧑‍💻 VS Code basics (zero experience needed)
 
-New to VS Code? This page teaches you the four things you need for the whole session. Everything can be done with clicks — the terminal is optional.
+New to VS Code? This page teaches you the four things you need for the whole session. Everything can be done with clicks — the terminal is optional. Any technical word used anywhere in the repo is defined in [docs/glossary.md](glossary.md).
 
 ## 1. Find your way around the window
 
