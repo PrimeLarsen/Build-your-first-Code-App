@@ -53,7 +53,18 @@ export interface Task {
 }
 ```
 
-All data access goes through `TaskService` in `src/services/` — screens never fetch directly. Today it returns mock data; in Lab 3 the same interface is backed by Dataverse. **Because screens only know the interface, swapping the data source touches one file.**
+All data access goes through `TaskService` in `src/services/` — screens never fetch directly. Today it returns mock data; in Lab 3 the same interface is backed by a **SharePoint list** (the data source your team uses every day). **Because screens only know the interface, swapping the data source touches one file.**
+
+### 3.1 SharePoint list mapping (used in Lab 3)
+
+| `Task` field | SharePoint column | Type |
+|---|---|---|
+| `id` | `Id` | built-in |
+| `title` | `Title` | built-in first column |
+| `status` | `Status` | Choice: `open` / `done` |
+| `dueDate` | `DueDate` | Date (optional) |
+| `notes` | `Notes` | Multiple lines of text (optional) |
+| `createdAt` | `Created` | built-in |
 
 ```ts
 export interface TaskService {

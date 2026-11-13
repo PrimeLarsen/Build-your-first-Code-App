@@ -2,7 +2,7 @@
 
 A **golden repo** for Power Apps **Code Apps** — a training template that junior Power Platform developers clone and use to build their first professional web app on the Power Platform, with the help of **GitHub Copilot** and **Playwright** UI tests.
 
-A Code App is a full React + TypeScript app (built with Vite) that runs natively inside Power Apps and can talk to Power Platform connectors and Dataverse. You write standard web code — the Power Platform runtime hosts it.
+A Code App is a full React + TypeScript app (built with Vite) that runs natively inside Power Apps and can talk to Power Platform connectors — in this training we use a **SharePoint list** as the data source. You write standard web code — the Power Platform runtime hosts it.
 
 ---
 
@@ -15,7 +15,7 @@ A Code App is a full React + TypeScript app (built with Vite) that runs natively
 | Clone a golden repo from **Azure DevOps** | [Lab 0](docs/labs/lab-0-setup.md) |
 | Read a **design spec** and **team rules** before coding | [Design](docs/design.md) · [Rules](docs/rules.md) |
 | Build app screens with **GitHub Copilot** | [Lab 2](docs/labs/lab-2-build-ui.md) |
-| Connect the app to **Power Platform data** | [Lab 3](docs/labs/lab-3-add-data.md) |
+| Connect the app to **Power Platform data** — a SharePoint list | [Lab 3](docs/labs/lab-3-add-data.md) |
 | Write **Playwright UI tests** | [Lab 4](docs/labs/lab-4-playwright.md) |
 | Open a PR and get it **validated by CI** | [Lab 5](docs/labs/lab-5-pr.md) |
 
@@ -34,7 +34,7 @@ A Code App is a full React + TypeScript app (built with Vite) that runs natively
 ├── src/                           # ⚛️ The Code App scaffold (React + Vite + TS + Fluent UI)
 │   ├── components/                # Reusable UI components
 │   ├── screens/                   # One folder per app screen
-│   ├── services/                  # Data access (mock today, Dataverse/connector later)
+│   ├── services/                  # Data access (mock today, SharePoint list in Lab 3)
 │   ├── models/                    # TypeScript types
 │   └── App.tsx                    # App shell + navigation
 ├── e2e/                           # 🧪 Playwright UI tests
@@ -51,7 +51,7 @@ npm install
 npm run dev        # app on http://localhost:3000
 ```
 
-The scaffold runs in **mock mode** (fake data, no Power Platform login needed), so it works on any machine — including CI. Lab 3 shows how to wire it to real Dataverse data with `pac`.
+The scaffold runs in **mock mode** (fake data, no Power Platform login needed), so it works on any machine — including CI. Lab 3 shows how to wire it to a real SharePoint list with `pac`.
 
 ```bash
 npm test           # run Playwright UI tests (headless)

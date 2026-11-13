@@ -34,8 +34,9 @@ Every technical term used in this repo, explained in one or two sentences. If a 
 | Term | What it actually means |
 |---|---|
 | **mock / mock mode** | A *fake* data source that behaves like the real one but serves made-up data and needs no login. The app runs on mocks until Lab 3 swaps in real Power Platform data. |
-| **seam** | The single place where two parts of the app connect — here, the `TaskService` interface. Screens only know the interface, so swapping mock data for Dataverse means changing **one file**. "The seam" always refers to this trick. |
+| **seam** | The single place where two parts of the app connect — here, the `TaskService` interface. Screens only know the interface, so swapping mock data for a SharePoint list means changing **one file**. "The seam" always refers to this trick. |
 | **service** | A class whose only job is data: fetching tasks, creating them, deleting them. Screens ask the service; they never fetch data themselves. |
+| **SharePoint list** | A table of items your team already uses in SharePoint — rows with columns, editable in the browser. In this training it's the real data source behind `TaskService` (Lab 3).
 | **connection ID** | The identifier of a connector's saved credentials (e.g. which SharePoint account to use). You get it from `pac connection list`. |
 | **generated code** | Code written by a tool (`pac code add-data-source`), not by a human. Never hand-edit it — see `docs/labs/lab-3-add-data.md`. |
 | **`pac`** | The Power Platform CLI (command-line tool) used in Lab 3 to log in to an environment and register/deploy the app. |
